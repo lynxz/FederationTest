@@ -1,0 +1,3 @@
+﻿extend type Book {
+  publisher: Publisher! @delegate(path: "publisher(id: $fields:publisherId)")
+}
